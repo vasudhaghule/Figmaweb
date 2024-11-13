@@ -1,7 +1,7 @@
-import CoreTracks from "@/components/sections/Services"
 import Hero from "@/components/sections/Hero"
-import Outcome from "@/components/sections/proposal"
+import Services from "@/components/sections/Services"
 import SpecializedTracks from "@/components/sections/SpecializedTracks"
+import Logos from "@/components/sections/logos"
 
 
 export default function Home() {
@@ -11,11 +11,11 @@ export default function Home() {
     {/* Hero section */}
     <Hero/>
     {/* Core Tracks Section */}
-    <CoreTracks/>
+    <Logos/>
     {/* Specialized Tracks */}
     <SpecializedTracks/>
     {/* outcome tracks */}
-    <Outcome/>
+    <Services/>
     
   </main>
 
