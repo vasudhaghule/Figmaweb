@@ -8,7 +8,6 @@ import Logos from "@/components/sections/logos";
 // Import images
 import Heading1 from "@/assets/Heading.png"; // Make sure to import the image properly
 import Useit from "@/components/shared/Useit";
-import Button from "@/components/shared/Button";
 
 export default function Home() {
   return (
@@ -23,7 +22,7 @@ export default function Home() {
         <Freeprps />
         <SpecializedTracks />
         <Services/>
-        <Button/>
+        
       </main>
     </>
   );

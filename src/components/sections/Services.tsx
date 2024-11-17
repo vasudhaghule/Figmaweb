@@ -9,16 +9,20 @@ const Services = () => {
         borderRadius: "45px",
         maxWidth: "1240px",
         height: "326px",
-        padding: "60px 0 0 50px",
-        gap: '20px', // Added gap between the paragraphs
+        padding: "30px 0 0 50px", // Slightly reduced padding at the top
+        gap: '20px', // Gap between paragraphs
       }}
     >
       {/* First Paragraph */}
-      <div style={{ 
-        borderRight: '1px solid #FFFFFF',
-        padding:"10px 20px 150px 10px", // Consistent padding on all sides
-        height: "100%"  // Ensure this div takes up the full height of the container
-       }}>
+      <div
+        style={{
+          width: "30%", // Adjust width for even spacing
+          padding: "0 10px 10px 10px", // Reduced padding at the top
+          marginTop: "-20px", // Move content slightly upwards
+          borderRight: '1px solid #FFFFFF', // Center border
+          textAlign: "left",
+        }}
+      >
         <p style={{ color: 'white', whiteSpace: 'normal' }}>
           For a local restaurant, we <br />
           implemented a targeted PPC <br />
@@ -29,13 +33,16 @@ const Services = () => {
       </div>
 
       {/* Second Paragraph */}
-      <div style={{  
-        color: 'white',
-        padding:"10px 20px 150px 100px",  // Consistent padding on all sides
-        borderRight: '1px solid #FFFFFF',
-        height: "100%"  // Ensure this div takes up the full height of the container
-      }}>
-        <p>
+      <div
+        style={{
+          width: "30%", // Adjust width for even spacing
+          padding: "0 10px 10px 10px", // Reduced padding at the top
+          marginTop: "-20px", // Move content slightly upwards
+          borderRight: '1px solid #FFFFFF', // Center border
+          textAlign: "left",
+        }}
+      >
+        <p style={{ color: 'white', whiteSpace: 'normal' }}>
           For a B2B software company, we<br />
           developed an SEO strategy that<br />
           resulted in a first page ranking<br />
@@ -45,12 +52,15 @@ const Services = () => {
       </div>
 
       {/* Third Paragraph */}
-      <div style={{  
-        color: 'white', 
-        padding:"10px 30px 150px 200px",  // Consistent padding on all sides
-        height: "100%"  // Ensure this div takes up the full height of the container
-      }}>
-        <p>
+      <div
+        style={{
+          width: "30%", // Adjust width for even spacing
+          padding: "0 10px 10px 10px", // Reduced padding at the top
+          marginTop: "-20px", // Move content slightly upwards
+          textAlign: "left",
+        }}
+      >
+        <p style={{ color: 'white', whiteSpace: 'normal' }}>
           For a national retail chain, we<br />
           created a social media<br />
           marketing campaign that<br />

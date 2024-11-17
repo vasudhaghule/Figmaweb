@@ -65,7 +65,7 @@ const Freeprps = () => {
   return (
     <div>
       {/* Useit Section */}
-      <div style={{ marginTop: "20px", marginBottom:"8px"}}>
+      <div style={{ marginTop: "20px", marginBottom:"70px"}}>
         <Useit
           imageSrc={Heading}  // Pass image source as prop
           altText="Service 1"
