@@ -1,25 +1,23 @@
 import React from 'react';
 
-// Define Props for the Useit component
 interface UseitProps {
-  title: string; // Title content
-  paragraphText: string; // Paragraph content
-  titleBgColor?: string; // Optional background color for the title
-  titleStyle?: React.CSSProperties; // Optional additional styles for the title
-  paragraphStyle?: React.CSSProperties; // Optional additional styles for the paragraph
+  title: string; 
+  paragraphText: string; 
+  titleBgColor?: string; 
+  titleStyle?: React.CSSProperties; 
+  paragraphStyle?: React.CSSProperties; 
 }
 
-// Define the Useit component
 const Useit: React.FC<UseitProps> = ({
   title,
   paragraphText,
-  titleBgColor = "#B9FF66", // Default background color
+  titleBgColor = "#B9FF66", 
   titleStyle,
   paragraphStyle,
 }) => {
   return (
     <div className="flex items-center w-full mb-0" style={{ margin: "20px 0 0 60px" }}>
-      {/* Title Section */}
+    
       <h3
         style={{
           fontFamily: "Space Grotesk",
@@ -28,11 +26,11 @@ const Useit: React.FC<UseitProps> = ({
           lineHeight: "32px",
           color: "#000",
           textAlign: "left",
-          backgroundColor: titleBgColor, // Dynamically set background color
+          backgroundColor: titleBgColor, 
           borderRadius: "10px",
           padding: "5px 10px",
-          flexShrink: 0, // Prevent the title from shrinking
-          ...titleStyle, // Merge additional styles
+          flexShrink: 0, 
+          
         }}
       >
         {title}

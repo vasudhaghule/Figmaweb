@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from 'next/image'; // Ensure you're using Next.js for optimized image handling
-import SampleImageFirst from '@/assets/sub.png'; // Image for containers 2-6
-import SampleImage from '@/assets/Plus icon.png'; // Image for container 1
+import Image from 'next/image'; 
+import SampleImageFirst from '@/assets/sub.png'; 
+import SampleImage from '@/assets/Plus icon.png'; 
 import Useit from '@/components/shared/Useit';
 
 const Processs = () => {
@@ -21,15 +21,15 @@ const Processs = () => {
           key={container.id}
           className="relative flex items-center justify-start border border-gray-800 rounded-3xl shadow-md mx-auto"
           style={{
-            backgroundColor: container.id === 1 ? "#B9FF66" : "#F3F3F3", // Different colors for the first and others
+            backgroundColor: container.id === 1 ? "#B9FF66" : "#F3F3F3", 
             borderRadius: "45px",
             maxWidth: "1240px",
-            height: container.id === 1 ? "279px" : "159px", // Height for the 1st container is different
+            height: container.id === 1 ? "279px" : "159px", 
             padding: "30px 0 0 50px",
-            marginBottom: "20px", // Spacing between containers
+            marginBottom: "20px", 
           }}
         >
-          {/* Container ID Box */}
+         
           <div
             style={{
               position: "absolute",
@@ -37,7 +37,7 @@ const Processs = () => {
               left: "50px",
               width: "65px",
               height: "77px",
-              color: "#000000", // White text color
+              color: "#000000", 
               display: "flex",
              marginBottom:"20px",
               fontSize: "60px",
@@ -47,57 +47,54 @@ const Processs = () => {
             {container.id < 10 ? `0${container.id}` : container.id}
           </div>
 
-          {/* Title */}
+         
           <div
             style={{
               position: "absolute",
               top: "55px",
-              left: "150px", // All titles will now be aligned to the left
+              left: "150px", 
               fontSize: container.fontSize,
               color: "#191A23",
               fontFamily: "Space Grotesk",
               fontWeight: "500",
               width:"612px",
               height:"38px",
-              marginBottom: container.id >= 2 && container.id <= 6 ? "20px" : "0", // Custom margin for containers 2 to 6
+              marginBottom: container.id >= 2 && container.id <= 6 ? "20px" : "0", 
             }}
           >
             {container.title}
           </div>
 
-          {/* Image */}
           <div
             style={{
               position: "absolute",
               top: "30px",
-              right: "50px", // Positioned to the right
-              width: "58px", // Adjust width
-              height: "58px", // Adjust height
+              right: "50px", 
+              width: "58px", 
+              height: "58px", 
             }}
           >
-            {/* Conditionally render images based on container id */}
+           
             <Image
-              src={container.id === 1 ? SampleImageFirst : SampleImage} // Different image for container 1
+              src={container.id === 1 ? SampleImageFirst : SampleImage} 
               alt={`${container.title} illustration`}
-              width={150} // Original width of the image
-              height={150} // Original height of the image
+              width={150} 
+              height={150} 
             />
           </div>
 
-          {/* Horizontal Line in the 1st container */}
           {container.id === 1 && (
             <div
               style={{
                 position: "absolute",
-                top: "135px", // Align with title
+                top: "135px", 
                 left: "50px",
-                width: "90%", // Span width of container
+                width: "90%", 
                 borderTop: "2px solid #191A23",
               }}
             />
           )}
 
-          {/* Paragraph only in 1st container */}
           {container.hasParagraph && (
             <div
               style={{
@@ -118,18 +115,13 @@ const Processs = () => {
           )}
         </div>
       ))}
-     <div style={{ marginTop: "100px", marginBottom: "15px" }}>
-      <Useit
-        title="Case Studies"
-        paragraphText="Explore Real-Life Examples of Our Proven Digital Marketing <br /> Success through Our Case Studies"
-      />
-    </div>
-    <div style={{ marginTop: "100px", marginBottom: "90px" }}>
+     <div style={{ marginTop: "150px", marginBottom: "60px" }}>
       <Useit
         title="Team"
-        paragraphText="Meet the skilled and experienced team behind our  <br /> successful digital marketing strategies"
+        paragraphText="Meet the skilled and experienced team behind our <br /> successful digital marketing strategies "
       />
     </div>
+    
     </section>
   );
 };
