@@ -3,7 +3,6 @@ import Image from "next/image";
 import Frame from "@/assets/Frame .png";
 import Wrapper from "../shared/Wrapper";
 import Useit from "../shared/Useit";
-import Heading1 from "@/assets/Heading2.png";
 
 const SpecializedTracks = () => {
   return (
@@ -83,14 +82,14 @@ const SpecializedTracks = () => {
       </Wrapper>
 
       {/* Add space between components */}
-      <div style={{ marginTop: "150px", marginBottom:"30px" }}>
-        <Useit
-          imageSrc={Heading1}  // Pass image source as prop
-          altText="Service 1"
-          paragraphText="At our digital marketing agency, we offer a range of services to<br />help businesses grow and succeed online. These services include:"
-        />
-      </div>
+      <div style={{ marginTop: "100px", marginBottom: "60px" }}>
+      <Useit
+        title="Case Studies"
+        paragraphText="Explore Real-Life Examples of Our Proven Digital Marketing <br /> Success through Our Case Studies"
+      />
+    </div>
     </section>
+    
   );
 };
 

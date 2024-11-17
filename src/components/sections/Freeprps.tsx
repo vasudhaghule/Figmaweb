@@ -7,8 +7,8 @@ import serv2 from "@/assets/serv2.png";
 import serv3 from "@/assets/serv3.png";
 import serv4 from "@/assets/serv4.png";
 import serv5 from "@/assets/serv5.png";
-import Heading from "@/assets/Heading.png"; // Ensure Heading is imported
-import Useit from "../shared/Useit"; // Ensure Useit is imported correctly
+import Useit from "../shared/Useit";
+
 
 const cardData = [
   {
@@ -64,16 +64,16 @@ const cardData = [
 const Freeprps = () => {
   return (
     <div>
-      {/* Useit Section */}
-      <div style={{ marginTop: "20px", marginBottom:"70px"}}>
-        <Useit
-          imageSrc={Heading}  // Pass image source as prop
-          altText="Service 1"
-          paragraphText="At our digital marketing agency, we offer a range of services to<br />help businesses grow and succeed online. These services include:"
-        />
-      </div>
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 p-12">
+      <div style={{ marginTop: "0px", marginBottom: "30px" }}>
+      <Useit
+        title="Services"
+        paragraphText="At our digital marketing agency, we offer a range of services to help <br /> businesses grow and succeed online. These services include:"
+      />
+    </div>
+
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-7 p-12">
         {cardData.map((card, index) => (
           <div
             key={index}
