@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
 
             {/* Description */}
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-black-90000 mb-8">
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.

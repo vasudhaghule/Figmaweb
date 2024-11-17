@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Wrapper from "@/components/shared/Wrapper";
 import Link from "next/link";
-import logo from "public/logo.png"
+import logo from "/public/logo.png"
 
 
 const SvgIcon = () => <svg width="27" height="15"></svg>;
